@@ -1,3 +1,4 @@
+import { RiReactjsLine } from 'react-icons/ri';
 import { RiNextjsLine } from 'react-icons/ri';
 import { SiTailwindcss } from 'react-icons/si';
 import { SiMobx } from 'react-icons/si';
@@ -48,7 +49,7 @@ const Header = () => {
                       <IoLogoJavascript size={iconSize} />
                       <SiTypescript size={iconSize} />
                       <TbBrandGraphql size={iconSize} />
-                      <FaReact size={iconSize} />
+                      <RiReactjsLine size={iconSize} />
                       <RiNextjsLine size={iconSize} />
                       <TbBrandRedux size={iconSize} />
                       <SiMobx size={iconSize} />

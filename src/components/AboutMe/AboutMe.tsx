@@ -76,7 +76,7 @@ const AboutMe = () => {
                   링크
                 </a>
                 <br />
-                <span>오버패칭 언더패칭 문제 해결을 위한 Graphql 방식 적용</span>
+                <span>오버패칭 언더패칭 해결을 위한 Graphql 적용 </span>
                 <a
                   rel="noreferrer"
                   target="_blank"
