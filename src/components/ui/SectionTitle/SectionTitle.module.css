@@ -1,0 +1,47 @@
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.header {
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1.2px solid var(--color-border);
+}
+
+.title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  color: var(--color-text);
+  font-size: 28px;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.title.dark {
+  color: var(--color-text-light);
+  color: white;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  top: 50%;
+  transform: translate(2px, -60%);
+  width: 2px;
+  height: 24px;
+  background-color: var(--color-text);
+  animation: blink 1s ease-in-out infinite;
+}
+
+.title.dark::after {
+  background-color: var(--color-text-light);
+}

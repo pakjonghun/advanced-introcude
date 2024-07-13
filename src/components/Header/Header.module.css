@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+.top {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  gap: 20px;
+}
+
+.avatarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 350px;
+  border-radius: 44%;
+  overflow: hidden;
+}
+
+.avatar {
+  object-fit: cover;
+  object-position: center;
+  transform: scale(0.7);
+}
+
+.skills {
+  gap: 10px;
+}

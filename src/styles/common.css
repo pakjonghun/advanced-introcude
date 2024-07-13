@@ -1,0 +1,18 @@
+.horizontal {
+  display: flex;
+}
+
+.title {
+  padding: 4px 0 2px 10px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.subTitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 20px;
+}

@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.link {
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.caption {
+  margin-left: 10px;
+}
+
+.albumContainer {
+  padding: 14px;
+}
+
+.projectCenter {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.erpLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
