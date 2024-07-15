@@ -7,11 +7,11 @@ const Projects = () => {
       <div className={styles.projectCenter}>
         <div className={styles.projectContentContainer}>
           <h5 className={`title ${styles.projectTitle}`}>{'재고, 판매관리 ERP'}</h5>
-          <p>제품 판매 및 재고관리를 위한 웹 프로젝트 입니다.</p>
-          <p>클라이언트 요청에 지속적으로 대응하고 있습니다.</p>
-          <p>FE : typescript, nextjs, graphql, material UI</p>
-          <p>BE : nestjs, mongodb</p>
-          <p>DEVOPS : atlas, elastic beanstalk, vercel</p>
+          <p className={styles.alignLeft}>제품 판매 및 재고관리를 위한 웹 프로젝트 입니다.</p>
+          <p className={styles.alignLeft}>클라이언트 요청에 지속적으로 대응하고 있습니다.</p>
+          <p className={styles.alignLeft}>FE : typescript, nextjs, graphql, material UI</p>
+          <p className={styles.alignLeft}>BE : nestjs, mongodb</p>
+          <p className={styles.alignLeft}>DEVOPS : atlas, elastic beanstalk, vercel</p>
 
           <div className={styles.card}>
             <h6 className={styles.company}>저장소</h6>

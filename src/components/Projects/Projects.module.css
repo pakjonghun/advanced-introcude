@@ -6,6 +6,10 @@
   color: var(--color-text);
 }
 
+.alignLeft {
+  text-align: left;
+}
+
 .content {
   display: flex;
   flex-direction: column;
