@@ -22,22 +22,30 @@ const Header = () => {
               <h5 className="title">{'프론트 개발(2년차)'}</h5>
               <div className={styles.card}>
                 <div>
-                  <h6 className={styles.company}>서버키트 코리아</h6>
-                  <span>(파모즈에서 분리)</span>
+                  <h6 className={styles.company}>
+                    서버키트 코리아(파모즈에서 분리){' '}
+                    <span className={styles.date}>2024.04 ~ 현재</span>
+                  </h6>
+                  <p></p>
+                  <p>자사 서비스 사용성 개선 및 최적화</p>
                 </div>
-                <span className={styles.date}>2024.04 ~ 현재</span>
               </div>
 
               <div className={styles.card}>
                 <div>
-                  <h6 className={styles.company}>(주)파모즈</h6>
-                  <span>(서버키트로 코리아로 분리)</span>
+                  <h6 className={styles.company}>
+                    (주)파모즈<span className={styles.date}>2022.09 ~ 2024.03 / 1년 7개월</span>
+                  </h6>
+                  <p>(주)성현 근태관리 어드민 웹 개발</p>
+                  <p>현대 러닝 센터 어드민 웹 개발</p>
+                  <p>DMZ 전망대 스카트 체험존 웹앱 개발</p>
+                  <p>자사 서비스 리뉴얼</p>
                 </div>
-                <span className={styles.date}>2022.09 ~ 2024.03 / 1년 7개월</span>
               </div>
               <div className={styles.card}>
-                <h6 className={styles.company}>부트캠프 수료</h6>
-                <span className={styles.date}>2021.09 ~ 2021.12 / 4개월</span>
+                <h6 className={styles.company}>
+                  부트캠프 수료<span className={styles.date}>2021.09 ~ 2021.12 / 4개월</span>
+                </h6>
               </div>
               <div className={`horizontal ${styles.skills}`}>
                 <IoLogoJavascript color={iconColor} size={iconSize} />

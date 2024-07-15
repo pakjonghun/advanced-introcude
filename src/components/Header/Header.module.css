@@ -59,16 +59,22 @@
 
 .company {
   font-size: var(--font-lg);
+  margin-bottom: 4px;
+}
+
+.paddingTop {
+  padding-top: 14px;
 }
 
 .date {
-  font-size: var(--font-lg);
+  margin-left: 10px;
+  font-size: var(--font-sm);
   color: var(--color-primary-light);
 }
 
 .card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   margin-bottom: 10px;
 }
