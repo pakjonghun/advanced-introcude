@@ -45,8 +45,8 @@
   color: var(--color-text);
 }
 
-.item:hover,
-.item.selected:hover {
+.item:focus,
+.item.selected:focus {
   color: var(--color-text);
 }
 
