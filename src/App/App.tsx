@@ -19,7 +19,7 @@ function App() {
   );
 
   const pageIndex = verticalOffset.findIndex(({ start, end }) => {
-    const scrollTop = scrollY + 61 + 180;
+    const scrollTop = scrollY + 61 + 290;
     return end >= scrollTop && scrollTop >= start;
   });
 
