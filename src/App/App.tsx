@@ -54,7 +54,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className={styles.container}>
       <SectionTitle
         pageIndex={pageIndex}
         onClickMenu={onClickNavigation}
@@ -67,7 +67,7 @@ function App() {
           );
         })}
       </main>
-    </>
+    </div>
   );
 }
 
