@@ -29,7 +29,7 @@
 }
 
 /* Small devices (sm) */
-@media (max-width: 700px) {
+@media (max-width: 740px) {
   .gridContainer {
     width: 450px;
     height: 450px;
