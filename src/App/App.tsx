@@ -43,8 +43,12 @@ function App() {
   };
 
   const onClickNavigation = (index: number) => {
-    console.log(verticalOffset[index].start);
-    window.scrollTo({ behavior: 'smooth', top: verticalOffset[index].start - 61 ?? 0 });
+    let scroll = verticalOffset[index].start - 61 ?? 0;
+    if (!index) {
+      scroll = 0;
+    }
+
+    window.scrollTo({ behavior: 'smooth', top: scroll });
   };
 
   const bodyMapper: Record<(typeof navigationList)[number], ReactNode> = {
