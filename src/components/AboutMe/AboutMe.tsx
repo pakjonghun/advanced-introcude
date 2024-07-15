@@ -1,11 +1,21 @@
+import { FaPeopleCarry } from 'react-icons/fa';
+import { FaPersonRunning } from 'react-icons/fa6';
+import { MdOutlineAutoFixHigh } from 'react-icons/md';
 import styles from './AboutMe.module.css';
 
 const AboutMe = () => {
+  const iconSize = 30;
+  const iconColor = '#666666';
+
   return (
     <div className={styles.content}>
       <div className={`${styles.card} ${styles.left}`}>
         <div className={styles.cardContainer}>
-          <h5 className="title">{'꾸준함'}</h5>
+          <div className={styles.headerTitle}>
+            <h5 className="title">{'꾸준함'}</h5>
+            <FaPersonRunning color={iconColor} size={iconSize} />
+          </div>
+
           <div className={styles.contentContainer}>
             <h6 className={styles.desc}>{'꾸준한 개발진행'}</h6>
             <a
@@ -32,7 +42,10 @@ const AboutMe = () => {
       </div>
       <div className={`${styles.card} ${styles.center}`}>
         <div className={styles.cardContainer}>
-          <h5 className="title">{'소통'}</h5>
+          <div className={styles.headerTitle}>
+            <h5 className="title">{'소통'}</h5>
+            <FaPeopleCarry color={iconColor} size={iconSize} />
+          </div>
           <div className={styles.contentContainer}>
             <h6 className={styles.desc}>{'클라이언트와 소통'}</h6>
             <a
@@ -59,7 +72,10 @@ const AboutMe = () => {
       </div>
       <div className={`${styles.card} ${styles.right}`}>
         <div className={styles.cardContainer}>
-          <h5 className="title">{'문제해결'}</h5>
+          <div className={styles.headerTitle}>
+            <h5 className="title">{'문제해결'}</h5>
+            <MdOutlineAutoFixHigh color={iconColor} size={iconSize} />
+          </div>
           <div className={styles.contentContainer}>
             <h6 className={styles.desc}>{'성능개선'}</h6>
             <a
