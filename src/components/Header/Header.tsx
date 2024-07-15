@@ -21,16 +21,19 @@ const Header = () => {
             <div className={styles.cardContainer}>
               <h5 className="title">{'프론트 개발(2년차)'}</h5>
               <div className={styles.card}>
-                <h6 className={styles.company}>서버키트 코리아</h6>
+                <div>
+                  <h6 className={styles.company}>서버키트 코리아</h6>
+                  <span>(파모즈에서 분리)</span>
+                </div>
                 <span className={styles.date}>2024.04 ~ 현재</span>
               </div>
+
               <div className={styles.card}>
-                <h6 className={styles.company}>(주)파모즈</h6>
+                <div>
+                  <h6 className={styles.company}>(주)파모즈</h6>
+                  <span>(서버키트로 코리아로 분리)</span>
+                </div>
                 <span className={styles.date}>2022.09 ~ 2024.03 / 1년 7개월</span>
-              </div>
-              <div className={styles.card}>
-                <h6 className={styles.company}>ABC Studio</h6>
-                <span className={styles.date}>2021.12 / 1개월</span>
               </div>
               <div className={styles.card}>
                 <h6 className={styles.company}>부트캠프 수료</h6>
