@@ -8,9 +8,9 @@ interface Props {
 
 const BaseDescription: FC<Props> = ({ title, description }) => {
   return (
-    <div className={`horizontal ${styles.content}`}>
+    <div>
       <h6 className="subTitle">{title}</h6>
-      <p className="description">{description}</p>
+      <div className="description">{description}</div>
     </div>
   );
 };
