@@ -68,6 +68,7 @@ function App() {
         {navigationList.map((navigation, idx) => {
           return (
             <ContentBody
+              pageIndex={pageIndex}
               key={`${idx}_${navigation}`}
               children={bodyMapper[navigation]}
               index={idx}
