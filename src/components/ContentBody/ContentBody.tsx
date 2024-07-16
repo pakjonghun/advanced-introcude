@@ -79,8 +79,8 @@ const ContentBody: FC<Props> = ({ pageIndex, setVertical, index, children }) => 
       };
 
       const animate = () => {
-        draw();
         if (pageIndex !== index) return;
+        draw();
         if (x - initialRadius <= width) {
           requestAnimationFrame(animate);
         } else {
