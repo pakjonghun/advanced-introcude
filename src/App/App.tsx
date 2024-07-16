@@ -67,7 +67,12 @@ function App() {
       <main className={styles.main}>
         {navigationList.map((navigation, idx) => {
           return (
-            <ContentBody children={bodyMapper[navigation]} index={idx} setVertical={setVertical} />
+            <ContentBody
+              key={`${idx}_${navigation}`}
+              children={bodyMapper[navigation]}
+              index={idx}
+              setVertical={setVertical}
+            />
           );
         })}
       </main>
