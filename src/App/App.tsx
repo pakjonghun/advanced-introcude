@@ -3,9 +3,10 @@ import AboutMe from '../components/AboutMe/AboutMe';
 import styles from './App.module.css';
 import { navigationList } from '../constants';
 import Projects from '../components/Projects/Projects';
-import Header from '../components/Header/Header';
+import Career from '../components/Career/Career';
 import SectionTitle from '../components/ui/SectionTitle/SectionTitle';
 import ContentBody from '../components/ContentBody/ContentBody';
+import IntroduceMe from '../components/IntroduceMe/IntroduceMe.module';
 
 export type VerticalOffset = {
   start: number;
@@ -52,7 +53,8 @@ function App() {
   };
 
   const bodyMapper: Record<(typeof navigationList)[number], ReactNode> = {
-    경력요약: <Header />,
+    자기소개: <IntroduceMe />,
+    경력요약: <Career />,
     성장발전: <AboutMe />,
     프로젝트: <Projects />,
   };

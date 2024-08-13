@@ -1,6 +1,8 @@
 .container {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   padding: 39px 0 100px 0;
 }
 
@@ -34,14 +36,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 304px;
-  height: 354px;
+  width: 230px;
+  height: 270px;
   border-radius: 50%;
   overflow: hidden;
 }
 
 .avatar {
-  object-fit: cover;
+  width: 350px;
+  height: 400px;
+  object-fit: scale-down;
   object-position: center;
   transform: scale(0.73);
 }

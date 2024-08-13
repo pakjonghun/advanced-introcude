@@ -10,14 +10,21 @@ interface Props {
   isDark?: boolean;
 }
 
-const SectionTitle: FC<Props> = ({ pageIndex, title, onClickMenu, isDark = false }) => {
+const SectionTitle: FC<Props> = ({
+  pageIndex,
+  title,
+  onClickMenu,
+  isDark = false,
+}) => {
   const isActive = navigationList[pageIndex] === title;
 
   const typingTitle = useTypingText({ title, isActive });
 
   return (
     <header className={styles.header}>
-      <h5 className={`${styles.title} ${isDark && styles.dark}`}>{typingTitle.toUpperCase()}</h5>
+      <h5 className={`${styles.title} ${isDark && styles.dark}`}>
+        {typingTitle.toUpperCase()}
+      </h5>
       <ul className={styles.navigation}>
         {navigationList.map((item, idx) => {
           const isSelected = title === item;
