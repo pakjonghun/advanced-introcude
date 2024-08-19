@@ -42,13 +42,12 @@ const Career = () => {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
-        {career.slice(0, 2).map((c, index) => {
+        {career.map((c, index) => {
           return (
             <CareerItem key={c.title?.toString()} career={c} index={index} />
           );
         })}
       </div>
-      {/* <div className={styles.right}></div> */}
     </div>
   );
 };

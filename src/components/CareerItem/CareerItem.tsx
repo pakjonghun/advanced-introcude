@@ -17,38 +17,15 @@ interface Props {
 }
 
 const CareerItem: FC<Props> = ({ career: { title, description }, index }) => {
-  const isOdd = index % 2;
+  const isEven = index % 2 == 0;
 
   return (
-    <div className={styles.container}>
-      <div className={styles.work}>
-        <div className={styles.workBox}>
-          {!isOdd && (
-            <div className={styles.border}>
-              {title}
-              {description}
-            </div>
-          )}
-        </div>
-      </div>
-      <div className={styles.link}>
-        <div className={styles.line}></div>
-      </div>
-      <div className={styles.timeLine}>
-        <div className={styles.verticalLine}></div>
-      </div>
-      <div className={styles.link}>
-        <div className={styles.lineRight}></div>
-      </div>
-      <div className={styles.work}>
-        <div className={styles.workBox}>
-          {!!isOdd && (
-            <div className={styles.border}>
-              {title}
-              {description}
-            </div>
-          )}
-        </div>
+    <div
+      className={`${styles.container} ${isEven ? styles.even : styles.odd} `}
+    >
+      <div className={styles.content}>
+        <h5>{title}</h5>
+        {description}
       </div>
     </div>
   );
